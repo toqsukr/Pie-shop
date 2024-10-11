@@ -1,3 +1,9 @@
+import Logo from '@/shared/icons/Logo'
+
 export default function Home() {
-  return <main></main>
+  return (
+    <main>
+      <Logo />
+    </main>
+  )
 }
