@@ -1,0 +1,23 @@
+.item {
+  @apply flex justify-center text-dark-gray font-medium rounded-2xl;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    @apply bg-light-gray;
+  }
+}
+
+.wrapper {
+  @apply flex flex-col items-center gap-[6px] p-3;
+}
+
+.active {
+  @apply relative text-primary;
+  &:hover {
+    @apply bg-transparent;
+  }
+  &::after {
+    @apply absolute inset-0 bg-primary rounded-[inherit] z-[1];
+    --tw-bg-opacity: 0.15;
+    content: '';
+  }
+}

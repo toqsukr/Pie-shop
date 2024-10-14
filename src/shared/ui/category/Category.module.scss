@@ -1,0 +1,16 @@
+.category {
+  @apply flex gap-1 py-[10px] px-[14px] text-dark-gray bg-light-gray rounded-[18px] font-semibold;
+  --tw-bg-opacity: 0.6;
+  transition: background 0.2s ease-in;
+  &:hover {
+    --tw-bg-opacity: 1;
+  }
+}
+
+.active {
+  @apply text-primary bg-primary;
+  --tw-bg-opacity: 0.2;
+  &:hover {
+    --tw-bg-opacity: 0.2;
+  }
+}

@@ -1,0 +1,12 @@
+.button {
+  @apply w-full p-4 rounded-xl font-semibold border-2 border-primary border-solid;
+  letter-spacing: 0.5px;
+}
+
+.primary {
+  @apply bg-primary text-white;
+}
+
+.secondary {
+  @apply bg-white text-primary;
+}
