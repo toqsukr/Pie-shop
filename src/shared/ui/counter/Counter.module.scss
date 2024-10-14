@@ -1,0 +1,5 @@
+.counter {
+  > button {
+    @apply px-3 py-2 border font-mono border-black border-solid text-center;
+  }
+}

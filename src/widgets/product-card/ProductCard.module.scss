@@ -1,0 +1,22 @@
+.card {
+  @apply flex flex-col w-[250px] text-center rounded-3xl break-words;
+  box-shadow: 0 0 4px 4px rgba(220, 220, 220, 0.3);
+}
+
+#img_wrapper {
+  @apply relative h-[250px] rounded-[inherit];
+  > img {
+    @apply relative flex-1 rounded-t-[inherit] select-none;
+  }
+}
+
+#text_wrapper {
+  @apply flex flex-col gap-2 p-4 pb-11;
+  > span {
+    @apply text-dark-gray;
+  }
+}
+
+#price {
+  @apply text-primary text-[1.2rem];
+}

@@ -1,0 +1,11 @@
+.cart_position {
+  @apply flex w-full;
+}
+
+#img_wrapper {
+  @apply w-9 h-9 bg-black;
+}
+
+#info_wrapper {
+  @apply flex flex-col;
+}

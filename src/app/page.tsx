@@ -1,9 +1,9 @@
-import Logo from '@/shared/icons/Logo'
+import CartPosition from '@/widgets/cart-position/CartPosition'
 
 export default function Home() {
   return (
     <main>
-      <Logo />
+      <CartPosition />
     </main>
   )
 }
