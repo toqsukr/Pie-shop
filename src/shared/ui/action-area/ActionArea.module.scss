@@ -1,0 +1,12 @@
+.area {
+  @apply p-[6px] border font-mono bg-light-gray text-dark-gray text-sm rounded-full text-center;
+  --tw-bg-opacity: 0.6;
+  &:hover,
+  &:focus-visible {
+    --tw-bg-opacity: 1;
+  }
+  transition: background 0.25s ease-in;
+  > svg {
+    @apply w-4 h-4;
+  }
+}
