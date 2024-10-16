@@ -12,7 +12,7 @@ const ProductCard: FC<ProductCardProp> = ({ image, title, price, amount }) => {
       </div>
       <div id={css.text_wrapper}>
         <CardHeader text={title} />
-        <strong id={css.price}>${price}</strong>
+        <strong className='text-primary text-[1.2rem]'>${price}</strong>
         <span>
           <strong>{amount} Pan</strong> Available
         </span>

@@ -6,7 +6,7 @@
 #img_wrapper {
   @apply relative h-[250px] rounded-[inherit];
   > img {
-    @apply relative flex-1 rounded-t-[inherit] select-none;
+    @apply relative flex-1 rounded-t-[inherit] p-6 select-none;
   }
 }
 
@@ -15,8 +15,4 @@
   > span {
     @apply text-dark-gray;
   }
-}
-
-#price {
-  @apply text-primary text-[1.2rem];
 }
