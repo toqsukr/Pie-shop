@@ -12,7 +12,7 @@ const Category: FC<PropsWithChildren<CategoryProp>> = ({
 }) => {
   return (
     <button {...props} className={cx(className, css.category, { [css.active]: active })}>
-      <span>{emoji}</span>
+      {emoji && <span>{emoji}</span>}
       {text}
     </button>
   )
