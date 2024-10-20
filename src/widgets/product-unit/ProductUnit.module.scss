@@ -1,0 +1,16 @@
+.unit {
+}
+
+.header {
+  @apply flex justify-between items-center mb-8;
+  > h1 {
+    @apply text-3xl font-semibold;
+  }
+  > p {
+    @apply text-lg text-dark-gray;
+  }
+}
+
+.cards {
+  @apply flex flex-wrap gap-12;
+}
