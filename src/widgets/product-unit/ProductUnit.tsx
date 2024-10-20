@@ -10,11 +10,13 @@ const ProductUnit: FC<ProductUnitProp> = ({ header, elements }) => {
         <h1>Choose {header}</h1>
         <p>{`${elements.length} ${header} Result`}</p>
       </header>
-      <div className={css.cards}>
+      <ul className={css.cards}>
         {elements.map(props => (
-          <ProductCard key={props.id} {...props} />
+          <li key={props.id}>
+            <ProductCard {...props} />
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   )
 }

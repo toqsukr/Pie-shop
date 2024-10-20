@@ -1,4 +1,5 @@
 export type CartPositionProp = {
+  id: string
   image: string
   title: string
   price: string

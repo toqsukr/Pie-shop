@@ -1,10 +1,12 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC, PropsWithChildren, ReactNode } from 'react'
 
-const ControlLayout: FC<PropsWithChildren> = ({ children }) => {
+const ControlLayout: FC<PropsWithChildren<{ control: ReactNode }>> = ({ children, control }) => {
   return (
-    <section style={{ gridTemplateColumns: '2fr 1fr' }} className='grid gap-12'>
-      {children}
-      <div className='w-full bg-black'></div>
+    <section
+      style={{ gridTemplateColumns: '65% 1fr', gridTemplateRows: '100%' }}
+      className='h-full grid gap-12 px-12'>
+      <div className='h-full bg-background pt-12 overflow-auto'>{children}</div>
+      <div className='h-full pt-12'>{control}</div>
     </section>
   )
 }
