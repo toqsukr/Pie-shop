@@ -1,13 +1,8 @@
-import OrderList from '@/modules/order/order-list/OrderList'
-import OrderStatus from '@/modules/order/order-status/OrderStatus'
+import { Routes } from '@/shared/constants'
+import { redirect } from 'next/navigation'
 
 const Order = () => {
-  return (
-    <div className='flex flex-col gap-10'>
-      <OrderStatus />
-      <OrderList />
-    </div>
-  )
+  return redirect(Routes.ORDER_PROCCESS)
 }
 
 export default Order
