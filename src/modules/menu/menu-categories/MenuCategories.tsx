@@ -3,7 +3,7 @@ import { menuCategories } from './MenuCategories.data'
 
 const MenuCategories = () => {
   return (
-    <nav className='flex-1'>
+    <nav>
       <Categories elements={menuCategories} />
     </nav>
   )
