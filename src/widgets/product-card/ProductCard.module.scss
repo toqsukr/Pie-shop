@@ -1,6 +1,5 @@
 .card {
-  @apply flex flex-col w-[250px] text-center rounded-3xl break-words;
-  box-shadow: 0 0 4px 4px rgba(220, 220, 220, 0.3);
+  @apply flex flex-col w-[250px] text-center rounded-3xl break-words shadow;
 }
 
 #img_wrapper {
