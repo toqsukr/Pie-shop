@@ -8,7 +8,7 @@ const ProductUnit: FC<ProductUnitProp> = ({ header, elements }) => {
     <section className={css.unit}>
       <header className={css.header}>
         <h1>Choose {header}</h1>
-        <p>{`${elements.length} ${header} Result`}</p>
+        <p>{`${elements.length} ${header}${elements.length > 1 ? 's' : ''} Result`}</p>
       </header>
       <ul className={css.cards}>
         {elements.map(props => (

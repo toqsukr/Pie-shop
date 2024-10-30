@@ -1,8 +1,8 @@
 import ProductUnit from '@/widgets/product-unit/ProductUnit'
-import { pizzaUnit } from './PizzaUnit.data'
+import { pizzas } from './PizzaUnit.data'
 
 const PizzaUnit = () => {
-  return <ProductUnit header='Pizza' elements={pizzaUnit} />
+  return <ProductUnit header='Pizza' elements={pizzas} />
 }
 
 export default PizzaUnit

@@ -14,7 +14,7 @@ const ProductCard: FC<ProductCardProp> = ({ image, title, price, amount }) => {
         <CardHeader text={title} />
         <strong className='text-primary text-[1.2rem]'>${price}</strong>
         <span>
-          <strong>{amount} Pan</strong> Available
+          <strong>{amount} </strong> Available
         </span>
       </div>
     </div>
