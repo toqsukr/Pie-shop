@@ -9,7 +9,7 @@ const ProductCard: FC<ProductCardProp> = ({ image, title, price, maxAvailable })
   return (
     <div className={css.card}>
       <div id={css.img_wrapper}>
-        <Image layout='fill' src={image} alt={title} />
+        <Image fill sizes='100%' src={image} alt={title} />
       </div>
       <div id={css.text_wrapper}>
         <CardHeader text={title} />

@@ -8,6 +8,7 @@ import { FC, useState } from 'react'
 import { IoClose } from 'react-icons/io5'
 import css from './CartPosition.module.scss'
 import { CartPositionProp } from './CartPosition.type'
+
 const CartPosition: FC<CartPositionProp> = props => {
   const { image, title, price, amount, maxAvailable, onEdit, onDecrement, onIncrement } = props
 
@@ -26,7 +27,7 @@ const CartPosition: FC<CartPositionProp> = props => {
   return (
     <div className={css.cart_position}>
       <div id={css.img_wrapper}>
-        <Image layout='fill' src={image} alt='pizza' />
+        <Image fill sizes='100%' src={image} alt='pizza' />
       </div>
       <div id={css.info_wrapper}>
         <CardHeader text={title} />
