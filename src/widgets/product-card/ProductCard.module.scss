@@ -10,7 +10,7 @@
 }
 
 #text_wrapper {
-  @apply flex flex-col gap-2 p-4 pb-11;
+  @apply flex flex-col gap-2 p-4 pt-0;
   > span {
     @apply text-dark-gray;
   }

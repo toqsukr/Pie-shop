@@ -1,7 +1,3 @@
-export type ProductCardProp = {
-  id: string
-  image: string
-  title: string
-  price: string
-  amount: number
-}
+import { Product } from '@/modules/menu/type'
+
+export type ProductCardProp = Product

@@ -5,10 +5,9 @@ import CardHeader from '@/shared/ui/card-header/CardHeader'
 import Counter from '@/widgets/counter/Counter'
 import Image from 'next/image'
 import { FC, useState } from 'react'
-import { AiFillEdit } from 'react-icons/ai'
+import { IoClose } from 'react-icons/io5'
 import css from './CartPosition.module.scss'
 import { CartPositionProp } from './CartPosition.type'
-
 const CartPosition: FC<CartPositionProp> = props => {
   const { image, title, price, amount, maxAvailable, onEdit, onDecrement, onIncrement } = props
 
@@ -45,7 +44,7 @@ const CartPosition: FC<CartPositionProp> = props => {
         <div id={css.control_panel}>
           <Counter value={count} decrement={handleDecrement} increment={handleIncrement} />
           <ActionArea onClick={onEdit}>
-            <AiFillEdit id={css.edit} />
+            <IoClose id={css.edit} />
           </ActionArea>
         </div>
       </div>

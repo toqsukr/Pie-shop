@@ -1,7 +1,9 @@
+'use client'
 import ProductUnit from '@/widgets/product-unit/ProductUnit'
-import { pancakes } from './PancakeUnit.data'
+import { useMenu } from '../store'
 
 const PancakeUnit = () => {
+  const { pancakes } = useMenu()
   return <ProductUnit header='Pancake' elements={pancakes} />
 }
 

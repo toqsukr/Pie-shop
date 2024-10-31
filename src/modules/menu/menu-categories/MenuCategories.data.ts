@@ -11,11 +11,11 @@ export const menuCategories: CategoryProp[] = [
     emoji: '🍔',
   },
   {
-    text: 'Pancakes',
+    text: 'Pancake',
     emoji: '🥞',
   },
   {
-    text: 'Drinks',
+    text: 'Drink',
     emoji: '🥤',
   },
 ]
