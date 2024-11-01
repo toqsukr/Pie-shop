@@ -5,10 +5,10 @@ import { ProductUnitProp } from './ProductUnit.type'
 
 const ProductUnit: FC<ProductUnitProp> = ({ header, elements }) => {
   return (
-    <section className={css.unit}>
+    <section>
       <header className={css.header}>
         <h1>Choose {header}</h1>
-        <p>{`${elements.length} ${header} Result`}</p>
+        <p>{`${elements.length} ${header}${elements.length > 1 ? 's' : ''} Result`}</p>
       </header>
       <ul className={css.cards}>
         {elements.map(props => (

@@ -1,5 +1,5 @@
-import CartBill from '@/features/cart-bill/CartBill'
 import ControlLayout from '@/layouts/ControlLayout'
+import CartBill from '@/modules/menu/cart-bill/CartBill'
 import { FC, PropsWithChildren } from 'react'
 
 const MenuLayout: FC<PropsWithChildren> = ({ children }) => {

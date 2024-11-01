@@ -1,5 +1,8 @@
+import { Routes } from '@/shared/constants'
+import { redirect } from 'next/navigation'
+
 const Order = () => {
-  return <div>Order</div>
+  return redirect(Routes.ORDER_PROCCESS)
 }
 
 export default Order

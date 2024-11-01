@@ -1,0 +1,7 @@
+.cart_list {
+  > li {
+    &:not(&:last-child) {
+      @apply border-b border-solid border-light-gray;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.order {
+  @apply grid gap-4 p-6 border-[3px] rounded-3xl bg-foreground shadow;
+  grid-template-rows: 1fr 1fr;
+  > div {
+    @apply flex justify-between items-center;
+    > h1 {
+      @apply font-semibold text-2xl;
+    }
+    > h2 {
+      @apply font-semibold text-xl;
+    }
+    > span {
+      @apply text-dark-gray text-xl;
+    }
+  }
+}

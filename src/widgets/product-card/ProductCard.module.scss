@@ -1,17 +1,20 @@
 .card {
-  @apply flex flex-col w-[250px] text-center rounded-3xl break-words;
-  box-shadow: 0 0 4px 4px rgba(220, 220, 220, 0.3);
+  @apply flex flex-col flex-1 text-center rounded-3xl break-words shadow;
 }
 
 #img_wrapper {
-  @apply relative h-[250px] rounded-[inherit];
+  @apply relative h-[300px] rounded-[inherit];
   > img {
-    @apply relative flex-1 rounded-t-[inherit] p-6 select-none;
+    @apply relative rounded-t-[inherit] p-6 select-none object-contain aspect-square will-change-transform;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
 #text_wrapper {
-  @apply flex flex-col gap-2 p-4 pb-11;
+  @apply flex flex-col gap-2 p-4 pt-0;
   > span {
     @apply text-dark-gray;
   }

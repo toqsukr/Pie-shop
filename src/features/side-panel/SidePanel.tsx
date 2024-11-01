@@ -11,7 +11,7 @@ const SidePanel = () => {
   return (
     <aside className={css.side_panel}>
       <div className={css.logo_container}>
-        <Logo className='w-13 h-13' />
+        <Logo className='w-13 h-13 text-primary' />
       </div>
       <NavPanelList
         elements={panelItems.map(item => ({
