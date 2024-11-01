@@ -17,7 +17,7 @@ const ProductCard: FC<ProductCardProp> = ({ image, title, price, maxAvailable })
         <span>
           <strong>{maxAvailable} </strong> Available
         </span>
-        <Button>Add to Cart</Button>
+        <Button theme='secondary'>Add to Cart</Button>
       </div>
     </div>
   )
