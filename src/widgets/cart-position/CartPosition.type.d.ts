@@ -5,9 +5,9 @@ export type CartPositionProp = {
   price: string
   amount: number
   maxAvailable: number
-  onEdit: () => void
-  onIncrement: () => void
-  onDecrement: () => void
+  onDelete: (id: string) => void
+  onIncrement: (id: string) => void
+  onDecrement: (id: string) => void
   crust?: string
   extras?: string
 }

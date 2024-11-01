@@ -5,8 +5,16 @@
 
 .primary {
   @apply bg-primary text-white;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    --tw-bg-opacity: 0.7;
+  }
 }
 
 .secondary {
   @apply bg-white text-primary;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  &:hover {
+    @apply bg-primary text-white;
+  }
 }

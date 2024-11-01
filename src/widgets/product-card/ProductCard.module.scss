@@ -5,7 +5,11 @@
 #img_wrapper {
   @apply relative h-[300px] rounded-[inherit];
   > img {
-    @apply relative rounded-t-[inherit] p-6 select-none object-contain aspect-square;
+    @apply relative rounded-t-[inherit] p-6 select-none object-contain aspect-square will-change-transform;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

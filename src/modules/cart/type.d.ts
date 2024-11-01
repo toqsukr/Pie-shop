@@ -5,6 +5,7 @@ export type CartProduct = {
 
 export type CartStore = {
   positions: CartProduct[]
-  addPosition: (position: CartProduct) => void
+  addPosition: (addID: string) => void
+  decrementPosition: (id: string) => void
   deletePosition: (deleteID: string) => void
 }

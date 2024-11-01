@@ -5,7 +5,14 @@ import { FC } from 'react'
 import css from './ProductCard.module.scss'
 import { ProductCardProp } from './ProductCard.type'
 
-const ProductCard: FC<ProductCardProp> = ({ image, title, price, maxAvailable }) => {
+const ProductCard: FC<ProductCardProp> = ({
+  id,
+  image,
+  title,
+  price,
+  maxAvailable,
+  onAddToCart,
+}) => {
   return (
     <div className={css.card}>
       <div id={css.img_wrapper}>
@@ -17,7 +24,9 @@ const ProductCard: FC<ProductCardProp> = ({ image, title, price, maxAvailable })
         <span>
           <strong>{maxAvailable} </strong> Available
         </span>
-        <Button theme='secondary'>Add to Cart</Button>
+        <Button onClick={() => onAddToCart(id)} theme='secondary'>
+          Add to Cart
+        </Button>
       </div>
     </div>
   )

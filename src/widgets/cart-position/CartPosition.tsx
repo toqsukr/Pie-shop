@@ -4,24 +4,21 @@ import ActionArea from '@/shared/ui/action-area/ActionArea'
 import CardHeader from '@/shared/ui/card-header/CardHeader'
 import Counter from '@/widgets/counter/Counter'
 import Image from 'next/image'
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import { IoClose } from 'react-icons/io5'
 import css from './CartPosition.module.scss'
 import { CartPositionProp } from './CartPosition.type'
 
 const CartPosition: FC<CartPositionProp> = props => {
-  const { image, title, price, amount, maxAvailable, onEdit, onDecrement, onIncrement } = props
-
-  const [count, setCount] = useState(amount)
+  const { id, image, title, price, amount, maxAvailable, onDelete, onDecrement, onIncrement } =
+    props
 
   const handleIncrement = () => {
-    setCount(prev => (prev + 1 > maxAvailable ? prev : prev + 1))
-    onIncrement()
+    amount + 1 <= maxAvailable && onIncrement(id)
   }
 
   const handleDecrement = () => {
-    setCount(prev => (prev - 1 < 1 ? prev : prev - 1))
-    onDecrement()
+    amount - 1 > 0 && onDecrement(id)
   }
 
   return (
@@ -43,8 +40,8 @@ const CartPosition: FC<CartPositionProp> = props => {
         )}
         <strong>${price}</strong>
         <div id={css.control_panel}>
-          <Counter value={count} decrement={handleDecrement} increment={handleIncrement} />
-          <ActionArea onClick={onEdit}>
+          <Counter value={amount} decrement={handleDecrement} increment={handleIncrement} />
+          <ActionArea onClick={() => onDelete(id)}>
             <IoClose id={css.edit} />
           </ActionArea>
         </div>

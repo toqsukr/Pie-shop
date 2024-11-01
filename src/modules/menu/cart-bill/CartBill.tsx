@@ -7,7 +7,7 @@ import { CartPositionProp } from '@/widgets/cart-position/CartPosition.type'
 import { useMenu } from '../store'
 
 const CartBill = () => {
-  const { positions } = useCart()
+  const { positions, addPosition, decrementPosition, deletePosition } = useCart()
   const { getAllMenu } = useMenu()
 
   const elements = positions.reduce<CartPositionProp[]>((accum, current) => {
@@ -18,9 +18,9 @@ const CartBill = () => {
     const cartPosition: CartPositionProp = {
       ...menuPosition,
       amount: current.amount,
-      onEdit: () => {},
-      onIncrement: () => {},
-      onDecrement: () => {},
+      onDelete: deletePosition,
+      onIncrement: addPosition,
+      onDecrement: decrementPosition,
     }
 
     return [...accum, cartPosition]
@@ -31,7 +31,7 @@ const CartBill = () => {
       <div className='flex-1 overflow-auto'>
         <CartList elements={elements} />
       </div>
-      <Button theme='primary'>Print Bill</Button>
+      <Button theme='primary'>Pay Order</Button>
     </section>
   )
 }
