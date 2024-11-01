@@ -1,3 +1,4 @@
+import Hydration from '@/shared/Hydration'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.scss'
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${roboto.className} antialiased`}>{children}</body>
+      <body className={`${roboto.className} antialiased`}>
+        <Hydration />
+        {children}
+      </body>
     </html>
   )
 }

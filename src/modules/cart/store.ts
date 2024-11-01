@@ -30,6 +30,7 @@ export const useCart = create(
     }),
     {
       name: StorageKeys.CART,
+      skipHydration: true,
     }
   )
 )
