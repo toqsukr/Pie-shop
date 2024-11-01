@@ -1,0 +1,11 @@
+.footer {
+  @apply flex flex-col gap-6 pt-10 px-6 shadow;
+  --tw-shadow: 0 -1px 1px 0 rgb(0 0 0 / 0.1);
+}
+
+.price {
+  @apply flex justify-between;
+  > span {
+    @apply text-gray font-semibold;
+  }
+}
