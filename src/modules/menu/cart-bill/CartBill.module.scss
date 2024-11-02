@@ -1,6 +1,16 @@
+.header {
+  @apply flex flex-col gap-4 p-6 pt-0 border-b border-solid border-light-gray;
+}
+
+.title {
+  @apply flex justify-between text-xl;
+  > h1 {
+    @apply font-semibold text-dark-gray;
+  }
+}
+
 .footer {
-  @apply flex flex-col gap-6 pt-10 px-6 shadow;
-  --tw-shadow: 0 -1px 1px 0 rgb(0 0 0 / 0.1);
+  @apply flex flex-col gap-6 pt-10 px-6 border-t border-solid border-light-gray;
 }
 
 .price {
